@@ -14,6 +14,7 @@ NSString * const headerKey = @"headerKey";
 NSString * const headerValue = @"headerValue";
 
 @interface DApiViewController ()<NSControlTextEditingDelegate,NSTableViewDelegate,NSTableViewDataSource>
+
 @property(nonatomic, strong) NSMutableArray *paramsKeyValueArray;
 @property(nonatomic, strong) NSMutableArray *headerKeyValueArray;
 
