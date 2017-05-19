@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DWindowController">
+            <connections>
+                <outlet property="leftView" destination="jNX-2R-iYK" id="GML-Mj-S7k"/>
+                <outlet property="rightView" destination="7t4-N4-Acr" id="FF4-K0-N39"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <userDefaultsController representsSharedInstance="YES" id="687"/>
+        <window title="DHelp" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="bTN-vp-vks">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="141" y="104" width="1000" height="713"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="qbb-F4-CW0">
+                <rect key="frame" x="0.0" y="0.0" width="1000" height="713"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <splitView dividerStyle="thin" vertical="YES" id="JaV-SC-C5V" userLabel="MainSplitView">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="713"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView id="jNX-2R-iYK" customClass="DRootSubview">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="713"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </customView>
+                            <customView id="7t4-N4-Acr" customClass="DRootSubview">
+                                <rect key="frame" x="501" y="0.0" width="499" height="713"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="245"/>
+                            <real value="245"/>
+                        </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="ax4-ND-QN1"/>
+                        </connections>
+                    </splitView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="ATd-dK-e8O"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="103.5"/>
+        </window>
+    </objects>
+</document>

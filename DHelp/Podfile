@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+inhibit_all_warnings!
+target 'DHelp' do
+
+  pod 'YTKNetwork', '~> 2.0.3'
+  pod 'Masonry', '~> 1.0.2'
+  pod 'JSONKit-NoWarning', '~> 1.2'
+end
